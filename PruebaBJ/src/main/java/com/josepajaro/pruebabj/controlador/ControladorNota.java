@@ -19,19 +19,23 @@ public class ControladorNota {
         return sercivioNota.crearNota(nota);
     }
 
-    @GetMapping
+    @GetMapping("/Nota")
     public List<Nota> getNotas(){
         return sercivioNota.getNotas();
     }
 
-    @GetMapping("{id}")
+    @GetMapping("/Nota/{id}")
     public Nota getNotaById(@PathVariable("id") Long id){
         return sercivioNota.getNotaById(id);
     }
 
-    @DeleteMapping("{id}")
+    @DeleteMapping("/Nota/{id}")
     public void eliminarNota(@PathVariable("id") Long id){
         sercivioNota.eliminarNota(id);
     }
 
+    @PutMapping("/Nota")
+    public void actualizarNota(@RequestBody Nota nota){
+        sercivioNota.actualizarNota(nota);
+    }
 }
