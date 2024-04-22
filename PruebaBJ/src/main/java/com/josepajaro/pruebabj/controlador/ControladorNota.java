@@ -22,12 +22,12 @@ public class ControladorNota {
     }
 
     @GetMapping("/Notas")
-    public List<Nota> getNotas(){
+    public List<Nota> mostrarNotas(){
         return sercivioNota.mostrarNotas();
     }
 
     @GetMapping("/Nota/{id}")
-    public Nota getNotaById(@PathVariable("id") Long id){
+    public Nota mostrarNotaPorId(@PathVariable("id") Long id){
         return sercivioNota.mostrarNotaPorId(id);
     }
 

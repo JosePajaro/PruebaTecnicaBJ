@@ -15,17 +15,17 @@ public class Nota {
         return id;
     }
 
-    public void setId(long id) {
+    /**public void setId(long id) {
         this.id = id;
-    }
+    }*/
 
     public String getNota() {
         return nota;
     }
 
-    public void setNota(String nota) {
+    /**public void setNota(String nota) {
         this.nota = nota;
-    }
+    }*/
 
     public byte getEstado() {
         return estado;

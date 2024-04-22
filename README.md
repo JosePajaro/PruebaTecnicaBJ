@@ -11,48 +11,44 @@ Debes ejecuta la aplicación y abrir el puerto 8080 para acceder en la base de d
 Desde postman podrar consumir la API Rest utilizando los siguientes EndPoint
 EndPoint para la API Rest
 
-	Crear una tarea
-	Tipo de solicitud:
-		Post
-	Url:
-		localhost:8080/api/notas
-	Body - raw:
-		{
-		"estado":0,
-		"nota":"Tarea pendiente"
-		}
+	- Crear una tarea
+		Tipo de solicitud:
+			Post
+				Url: localhost:8080/api/
+				Body - raw:
+					{
+					"id":1
+					"estado":0,
+					"nota":"Tarea pendiente"
+					}
 
 
-	Consultar tareas
-	Tipo de solicitud:
-		Get
-	Url:
-		localhost:8080/api/notas/Nota
+	- Consultar tareas
+		Tipo de solicitud:
+			Get
+				Url: localhost:8080/api/Notas
 	
 	
-	Consultar una tarea
-	Tipo de solicitud:
-		Get
-	Url:
-		localhost:8080/api/notas/Nota/'# id de la tarea que deseas consultar'
+	- Consultar una tarea
+		Tipo de solicitud:
+			Get
+				Url:localhost:8080/api/Notas/'# id de la tarea que deseas consultar'
 
 	
-	Actualizar una tarea
-	Tipo de solicitus:
-		Put
-	Url:
-		localhost:8080/api/notas/Nota
-	Body - raw:
-		{
-		"id":'# id'
-		"estado":'# estado deseado',
-		"nota":'Cambiar si desea'
-		}
+	- Actualizar una tarea
+		Tipo de solicitus:
+			Put
+				Url: localhost:8080/api/notas/Nota
+				Body - raw:
+					{
+					"id":'# id'
+					"estado":'# estado deseado',
+					"nota":'Cambiar si desea'
+					}
 
 
-	Eliminar una tarea
-	Tipo de solicitud:
-		Delete
-	Url:
-		localhost:8080/api/notas/Nota/'# id de la tarea que deseas eliminar'
+	- Eliminar una tarea
+		Tipo de solicitud:
+			Delete
+				Url: localhost:8080/api/Nota/'# id de la tarea que deseas eliminar'
 
